@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mythos.building</title>
+  <meta name="description" content="A mythology forge. Every seed grows a complete invented mythology: a language, a pantheon, a creation myth, and a sky of constellations that remember it." />
+  <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-head">
+    <span class="wordmark">MYTHOS&middot;BUILDING</span>
+    <div class="controls">
+      <form id="seed-form">
+        <label class="visually-hidden" for="seed-input">Seed</label>
+        <input id="seed-input" autocomplete="off" spellcheck="false" aria-label="Mythology seed" />
+      </form>
+      <button class="btn ghost" type="button" data-action="copy">Copy link</button>
+      <button class="btn" type="button" data-action="forge">&#10049; Forge anew</button>
+    </div>
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <div class="veil-overlay" aria-hidden="true"></div>
+  <noscript><p class="noscript">mythos.building forges worlds with JavaScript; without it, the void stays void.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
