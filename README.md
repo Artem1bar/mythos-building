@@ -76,3 +76,8 @@ pull requests are welcome.
 ## Built with
 
 Built with Claude Code, Anthropic's agentic coding tool. Licensed under [MIT](LICENSE).
+
+## Origin
+
+This project came out of a series of open-prompt experiments: an empty folder, Claude Code, and one instruction to build whatever it found interesting and make it good. I set the constraints, kept what worked, and shipped it; the code is Claude's. It was built in the first days I had access to Claude Fable.
+
