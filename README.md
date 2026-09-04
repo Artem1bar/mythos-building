@@ -19,6 +19,8 @@ internally consistent invented mythology:
 Every mythology is deterministic: the same seed always forges the same world.
 The seed lives in the URL hash, so any world can be shared as a link.
 
+![The Sky That Remembers: a generated star map whose constellations commemorate the myth's own events](docs/screenshot.png)
+
 ## The trick that makes it feel authored
 
 Generated events cross-reference each other. The slain god's blood may be what
@@ -29,11 +31,13 @@ a moonless world worships no moon god. These interlocks are checked by tests.
 ## Run it
 
 ```bash
-npm start        # serves on http://localhost:4173 (any static server works)
+npm start        # serves on http://localhost:4173 (uses python3 -m http.server)
 npm test         # 28 tests via node --test, zero dependencies
 ```
 
-No build step, no dependencies. Plain ES modules, HTML, CSS.
+No build step, no dependencies. Plain ES modules, HTML, CSS. The page needs an
+http origin rather than `file://` because it uses ES modules; if you have Node
+but not Python, `npx serve -l 4173 .` works just as well.
 
 ## Architecture
 
@@ -63,6 +67,11 @@ generators: leaked `{placeholders}`, `undefined` in prose, NaN in SVG paths,
 duplicate or confusable god names (edit distance ≤ 2), pronoun disagreement,
 dead gods taking actions after their death, and constellations the prose
 references but the sky never drew.
+
+## Status
+
+Stable. The generator, prose engine, and test suite are complete; issues and
+pull requests are welcome.
 
 ## Built with
 
