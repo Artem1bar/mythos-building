@@ -3,6 +3,8 @@
 **A mythology forge.** Give it a seed — any string — and it grows a complete,
 internally consistent invented mythology:
 
+**Live:** [mythos-building.vercel.app](https://mythos-building.vercel.app)
+
 - **A language.** Each world generates its own phonology (a private inventory
   of sounds and syllable shapes), and every god, place, and people is named
   from it — so a pantheon sounds like one culture, not a list of noise.
