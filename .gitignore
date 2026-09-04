@@ -1,2 +1,24 @@
-.DS_Store
+# Environment
+.env
+.env.*
+!.env.example
+
+# Dependencies / build
 node_modules/
+.next/
+dist/
+build/
+
+# Data
+*.db
+*.sqlite
+
+# Tests
+coverage/
+playwright-report/
+test-results/
+
+# Local tooling / OS
+.gstack/
+.DS_Store
+*.log

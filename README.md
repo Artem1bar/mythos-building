@@ -63,3 +63,7 @@ generators: leaked `{placeholders}`, `undefined` in prose, NaN in SVG paths,
 duplicate or confusable god names (edit distance ≤ 2), pronoun disagreement,
 dead gods taking actions after their death, and constellations the prose
 references but the sky never drew.
+
+## Built with
+
+Built with Claude Code, Anthropic's agentic coding tool. Licensed under [MIT](LICENSE).
